@@ -1,0 +1,11 @@
+; set radius in meter around given address or coordinate to check if location entered this circular zone around point
+; [general]
+; radius=200
+
+; helpful to find out coordinates: https://www.latlong.net/convert-address-to-lat-long.html
+; either use address parameter string to lookup for address or float coordinates for exact point or if address is not found
+; if coordinates are given then address will be ignored
+[cathedral]
+address="Domplatz 1 , 36037 Fulda"
+; lat=50.553890
+; long=9.674310
