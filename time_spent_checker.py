@@ -21,7 +21,7 @@ config.read('config.ini')
 # designed for python3 run on linux
 # windows produces memory error even on python64 because it use like 2gb ram to load data
 
-geolocator = Nominatim(user_agent="8ball app test evaluation")
+geolocator = Nominatim(user_agent="Time spent checker")
 
 #initizialization of variables for later use in methods
 total_length = 0
