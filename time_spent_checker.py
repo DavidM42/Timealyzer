@@ -42,8 +42,6 @@ def create_Pickle(history_file):
                 df.to_pickle("location.pkl")
                 print(df)
 
-# TODO implements cmd parameters to only create pickle via option --save or only display dataset via --lists and implement --help
-
 def read_Pickle():
         return pd.read_pickle("location.pkl")
 
@@ -121,16 +119,11 @@ def main_checkings(df, locations):
         print("Time spent here: " + str(sumtime))
         print("Manual calculated hours spent here: " + str(manual_sumtime/1000/60/60))
 
-
-#TODO file to get locations from
-
 def print_help():
         print("First use: time_spent_checker.py -l <location_history_file>.json")
         print("After that just use it like time_spent_checker.py to use cached version of history")
         print("Unless you want to reload new version into cache then use -l again to load file")
         return True
-
-# TODO or maybe give name of location file in config.ini
 
 def main(argv):
         global total_length
